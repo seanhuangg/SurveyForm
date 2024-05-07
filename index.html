@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form to help us improve our platform.</p>
+  <body>
+    <div class="container">
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name*:
+                <input id="name" type="text" placeholder="Ex. John Smith" required/>
+                </label>
+    
+                <label id="email-label" for="email">Email*:
+                <input id="email" type="email" placeholder="Ex. name@example.com" required/>
+                </label>
+    
+                <label id="number-label" for="number">Age(optional)
+                <input id="number" type="number" min="13" max="120" placeholder="Age"/>
+                </label>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Please select the option that best describes your experience:</legend>
+                <select id="dropdown">
+                    <option value="">Please select one</option>
+                    <option value="1">I'm very satisfied</option>
+                    <option value="2">I'm satisfied</option>
+                    <option value="3">I'm not dissatisfied nor completely satisfied</option>
+                    <option value="4">I'm not satisfied</option>
+                </select>
+    
+                <legend>Would you recommend our service to a friend or colleague?</legend>
+                <label for="Definitely"><input id="Definitely" type="radio" name="recommend" class="inline" value="5"checked /> Definitely</label>
+                <label for="Maybe"><input id="Maybe" type="radio" name="recommend" class="inline" value="6"/> Maybe</label>
+                <label for="Not Sure"><input id="Not Sure" type="radio" name="recommend" class="inline" value="7"/> Not Sure</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>What would you like to see improved?(Check all that apply)</legend>
+                <label for="customer-service"><input class="inline" id="customer-service" type="checkbox" name="customer-service" value="8"/>Customer Service</label>
+                <label for="usability"><input class="inline" id="usability" type="checkbox" name="usability" value="9"/>Usability</label>
+                <label for="response-time"><input class="inline" id="response-time" type="checkbox" name="response-time" value="10"/>Response Time</label>
+                <label for="product-quality"><input class="inline" id="product-quality" type="checkbox" name="product-quality" value="11"/>Product Quality</label>
+                <label for="shipping-time"><input class="inline" id="shipping-time" type="checkbox" name="shipping-time" value="12"/>Shipping Time</label>
+                <label for="efficiency"><input class="inline" id="efficiency" type="checkbox" name="efficiency" value="1"/>Efficiency</label>
+                <label for="accessibility"><input class="inline" id="accessibility" type="checkbox" name="accessibility" value="13"/>Accessibility</label>
+    
+                <label for="comments">Additional Comments:
+                <textarea id="comments" name="comments" rows="5" cols="60" placeholder="Additional comments..."></textarea>
+                </label>
+            </fieldset>
+    
+            <input id="submit" type="submit" value="Submit"/>
+    
+            </form>
+        </div>
+</body>
+
+</html>
